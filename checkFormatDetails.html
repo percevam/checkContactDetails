@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <script type="text/javascript" src ="checkFormatDetails.js"></script>
+    </head>
+    <body>
+        <form>
+            <p>
+                <label>Phone</label> 
+                <input name="phone" type="tel" placeholder="Téléphone" onchange="testFormat('phone')">  
+                <span id="phoneFormat" style="display: none;">Incorrect format.</span> 
+            </p>
+            <p>
+                <label>Email</label> 
+                <input name="mail" type="text" placeholder="Email" onchange="testFormat('mail')">  
+                <span id="mailFormat" style="display: none;">Incorrect format.</span> 
+            </p>
+            <p>
+                <label>Zip code</label> 
+                <input name="zipcode" type="text" placeholder="Code postal" onchange="testFormat('zipcode')"> 
+                <span id="zipcodeFormat" style="display: none;">Incorrect format.</span> 
+            </p>
+            <p>
+                <input type="submit" value="Envoyer" />
+            </p>
+        </form>
+    </body>
+</html>
